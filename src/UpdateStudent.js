@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Comp1 = ({ 
-  students, 
+const UPdateStudent = ({  
   updateStudent, 
   oldEmail, setOldEmail, 
   newName, setNewName, 
@@ -36,4 +35,4 @@ const Comp1 = ({
   );
 };
 
-export default Comp1;
+export default UPdateStudent;

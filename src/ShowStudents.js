@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Comp2 = (props) => {
-  let students = props.students
+const ShowStudents = ({students}) => {
   return (
     <div>
-      <h2> Stidents :</h2>
+      <h2> Students :</h2>
       {students.map(student=>
-      <div key={student.email}>
+      <div key={student.id}>
+        Id : {student.id},
         name : {student.name},
         email : {student.email}
       </div>)}
@@ -14,4 +14,4 @@ const Comp2 = (props) => {
   )
 }
 
-export default Comp2
+export default ShowStudents
