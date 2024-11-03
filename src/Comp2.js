@@ -6,7 +6,7 @@ const Comp2 = (props) => {
     <div>
       <h2> Stidents :</h2>
       {students.map(student=>
-      <div>
+      <div key={student.email}>
         name : {student.name},
         email : {student.email}
       </div>)}
